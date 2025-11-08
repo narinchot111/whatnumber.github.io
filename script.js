@@ -112,13 +112,10 @@ function giveUp() {
     // แสดงเฉลยเลขลับ
     result.textContent = `💥 คำตอบคือ: ${secret}`;
     // อัพประวัติ
-    history.push(`เฉลย : ${secret}`);
+    history.push(`เฉลย: ${secret}`);
     document.getElementById("history").innerHTML = history.join('<br>');
     // ปุ่มรีสตาร์ทและ popup แสดง
     restartBtn.classList.remove("hidden");
     winPopup.classList.remove("hidden");
     document.getElementById("popupAttempts").textContent = `คุณยอมแพ้ หลังเล่น ${attempts} รอบ`;
 }
-
-
-
